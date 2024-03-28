@@ -60,7 +60,7 @@ populate_inbox(inbox)
 menu = True
 
 while True:
-    user_choice = int(input('''\nWould you like to:
+    user_input = int(input('''\nWould you like to:
     
         1. Read an email
         2. View unread emails
@@ -68,16 +68,16 @@ while True:
 
     Enter selection (1,2,3): '''))
        
-    if user_choice == 1:
+    if user_input == 1:
         read_email()
         
-    elif user_choice == 2:
+    elif user_input == 2:
         print("\nUnread Emails:")
         for i, email in enumerate(inbox, start=1):
             if email.has_been_read == False:
                 print(f"{i}. Email Address: {email.email_address}, Subject Line: {email.subject_line}")
             
-    elif user_choice == 3:
+    elif user_input == 3:
         print("\nBye bye!")
         exit()
 
