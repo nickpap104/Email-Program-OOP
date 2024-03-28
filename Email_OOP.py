@@ -20,7 +20,7 @@ class Email():
 # Initialise an empty list to store the email objects.
 inbox = []
 # --- Functions --- #
-# This is the methods that has the other methids for my program.
+# This is where I made the functions for my program.
 
 def populate_inbox(inbox):
     # Create 3 sample emails and add it to the Inbox list.
@@ -38,7 +38,7 @@ def read_email():
     list_emails()
     index = int(input("\nEnter the index of the email you want to read: "))
 
-    # Here we check if the index is valid, we take from outside
+    # Here we check if the index is valid, apart from
     # 0,1,2 numbers we set earlier
     if index < 1 or index > len(inbox):
         print("Invalid index. Please try again.")
